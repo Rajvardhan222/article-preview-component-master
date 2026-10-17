@@ -1,0 +1,135 @@
+/* Basic CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Manrope";
+  background: hsl(210, 46%, 95%);
+}
+
+.card {
+  max-width: 90vw;
+  margin-inline: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  margin-top: 3rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.card > img {
+  max-width: 100%;
+  height: auto;
+}
+.card h3 {
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.card .main {
+  margin-inline: 2rem;
+  margin-top: 1rem;
+}
+
+.description {
+  color: hsl(214, 17%, 51%);
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 2rem;
+}
+.profile #avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.profile #profile__info {
+  margin-left: 1.5rem;
+}
+.profile #share__container {
+  margin-left: auto;
+}
+.profile #share__container {
+  background-color: hsl(210, 46%, 95%);
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.share {
+  display: flex;
+  background-color: hsl(217, 19%, 35%);
+  justify-content: start;
+  padding-block: 1.4rem;
+  align-items: center;
+  color: white;
+  padding-inline: 2rem;
+  gap: 1rem;
+}
+.share p {
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.share .share__container__icon {
+  margin-left: auto;
+}
+.share .share__container__icon {
+  background-color: white;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.profile {
+  background-color: white;
+  transition: background-color 200ms ease;
+}
+
+.profile.is-open {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.profile.is-open #share__container {
+  background-color: hsl(217, 19%, 35%);
+}
+
+/*# sourceMappingURL=main.css.map */
